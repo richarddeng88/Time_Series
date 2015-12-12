@@ -1,0 +1,5 @@
+library(TSA)
+data(rwalk)
+plot(rwalk, type="o")
+model1 <- lm(rwalk~ time(rwalk))  
+abline(model1, col="red")
